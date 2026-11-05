@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#141523">
+  <meta name="color-scheme" content="dark">
+  <title>CashZone Profile Studio — Windows Chrome User Agent &amp; Email Generator</title>
+  <meta name="description" content="Generate a realistic Windows Chrome user agent with optional Chrome version selection and a globally unique US-style Gmail address. Fast, private and built for testing.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="CashZone Profile Studio">
+  <meta property="og:description" content="Realistic Windows Chrome user agents and globally unique US-style email profiles — in one click.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CashZone">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CashZone Profile Studio">
+  <meta name="twitter:description" content="Realistic Windows Chrome user agents and globally unique US-style email profiles — in one click.">
+  <link rel="icon" type="image/png" href="./assets/icon.png">
+  <link rel="apple-touch-icon" href="./assets/icon.png">
+  <link rel="preload" href="./assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/poppins-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#generator">Skip to generator</a>
+
+  <noscript>
+    <div class="noscript-banner">This generator needs JavaScript enabled. Turn it on and reload the page.</div>
+  </noscript>
+
+  <div class="site-art" aria-hidden="true">
+    <div class="art-grid"></div>
+    <div class="art-glow art-glow--top"></div>
+    <div class="art-glow art-glow--side"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="https://cashzone.cc/" target="_blank" rel="noopener noreferrer" aria-label="CashZone — opens cashzone.cc">
+        <img src="./assets/logo.png" alt="CashZone" width="480" height="192">
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#generator">Generator</a>
+        <a href="#recent">Recent</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="header-status" id="serviceStatus" title="Checking the global email registry" aria-live="polite">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="serviceStatusText">Checking registry</span>
+        </span>
+        <a class="btn btn-ghost btn-small" href="https://cashzone.cc/" target="_blank" rel="noopener noreferrer">
+          Visit CashZone
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="eyebrow reveal">
+          <span class="eyebrow-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m13 2-2 7h6l-8 13 2-8H5l8-12Z"/></svg>
+          </span>
+          CashZone Profile Studio
+          <span class="eyebrow-slash" aria-hidden="true">/</span>
+          <span class="eyebrow-muted">Free utility</span>
+        </div>
+
+        <h1 class="reveal reveal-delay-1">
+          Realistic Windows Chrome profiles.<br>
+          <span class="text-gradient">One click. Zero repeats.</span>
+        </h1>
+
+        <p class="hero-copy reveal reveal-delay-2">
+          Create a clean Windows Chrome user agent and a unique US-style Gmail address in seconds.
+          Choose a Chrome version if you want — or keep it optional and use the default.
+        </p>
+
+        <div class="hero-meta reveal reveal-delay-3" aria-label="Tool highlights">
+          <span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            No duplicates
+          </span>
+          <span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+            Global registry
+          </span>
+          <span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM8 9h8M8 13h8M8 17h5"/></svg>
+            Windows 10 &amp; 11
+          </span>
+          <span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Chrome 155 ready
+          </span>
+        </div>
+
+        <div class="hero-code reveal reveal-delay-3" aria-hidden="true">
+          <span class="hero-code-label">FORMAT PREVIEW</span>
+          <code>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36</code>
+          <span class="hero-code-lock">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            GLOBAL
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="generator-section" id="generator">
+      <div class="container">
+        <div class="studio-grid">
+          <aside class="panel controls-panel" aria-labelledby="controls-title">
+            <div class="panel-topline">
+              <span class="section-index">01</span>
+              <span class="mini-label">Generator controls</span>
+            </div>
+
+            <div class="panel-heading">
+              <div>
+                <h2 id="controls-title">Build your profile</h2>
+                <p>One click creates both values.</p>
+              </div>
+              <span class="icon-tile" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 7h16M7 12h10M10 17h4"/><circle cx="8" cy="7" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="12" cy="17" r="2"/></svg>
+              </span>
+            </div>
+
+            <div class="control-block">
+              <div class="label-row">
+                <label for="versionSelect">Chrome version</label>
+                <span class="optional-pill">Optional</span>
+              </div>
+
+              <label class="switch-row" for="manualVersion">
+                <span class="switch-copy">
+                  <strong>Choose manually</strong>
+                  <small id="versionHint">Off: uses Chrome 155.0.0.0</small>
+                </span>
+                <span class="switch">
+                  <input type="checkbox" id="manualVersion" role="switch" aria-controls="versionSelect">
+                  <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+                </span>
+              </label>
+
+              <div class="select-wrap is-disabled" id="selectWrap">
+                <select id="versionSelect" disabled aria-describedby="versionHelp">
+                  <option value="155" selected>Chrome 155.0.0.0 (Default)</option>
+                </select>
+                <svg class="select-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+              <p class="field-help" id="versionHelp">The default reproduces Chrome 155.0.0.0 exactly.</p>
+            </div>
+
+            <div class="config-list" aria-label="Profile specification">
+              <div class="config-row"><span>Operating system</span><strong>Windows 10 / 11</strong></div>
+              <div class="config-row"><span>Architecture</span><strong>Win64 · x64</strong></div>
+              <div class="config-row"><span>Browser engine</span><strong>Blink / WebKit</strong></div>
+              <div class="config-row"><span>Email style</span><strong>US · Gmail</strong></div>
+            </div>
+
+            <button class="btn btn-primary btn-generate" id="generateBtn" type="button">
+              <span class="btn-shine" aria-hidden="true"></span>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-2 7h6l-8 13 2-8H5l8-12Z"/></svg>
+              <span>Generate profile</span>
+              <kbd>G</kbd>
+            </button>
+
+            <p class="local-note">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              Email uniqueness is reserved globally. No personal data is sent.
+            </p>
+          </aside>
+
+          <section class="panel output-panel" aria-labelledby="output-title">
+            <div class="output-panel-head">
+              <div>
+                <div class="panel-topline">
+                  <span class="section-index">02</span>
+                  <span class="mini-label">Live output</span>
+                </div>
+                <h2 id="output-title">Your new profile</h2>
+              </div>
+              <span class="status-pill" id="outputStatus">
+                <span class="status-dot"></span>
+                <span id="outputStatusText">Waiting</span>
+              </span>
+            </div>
+
+            <div class="output-stack" id="outputStack">
+              <article class="data-card">
+                <div class="data-card-head">
+                  <span class="data-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>
+                  </span>
+                  <span class="data-copy">
+                    <span class="mini-label">User agent</span>
+                    <strong>Windows Chrome / Blink</strong>
+                  </span>
+                  <span class="data-badge" id="uaChromeBadge">Chrome 155</span>
+                </div>
+                <code class="ua-value" id="uaOutput" aria-live="polite">Click “Generate profile” to create your first user agent.</code>
+                <div class="data-card-actions">
+                  <button class="btn btn-soft btn-copy" id="copyUaBtn" type="button" disabled data-copy="ua">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"/></svg>
+                    <span>Copy user agent</span>
+                  </button>
+                  <span class="format-note">Standard desktop format</span>
+                </div>
+              </article>
+
+              <article class="data-card">
+                <div class="data-card-head">
+                  <span class="data-icon data-icon--mail" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                  </span>
+                  <span class="data-copy">
+                    <span class="mini-label">US-style email</span>
+                    <strong>Globally reserved Gmail handle</strong>
+                  </span>
+                  <span class="data-badge data-badge--lime" id="emailBadge">Not generated</span>
+                </div>
+                <div class="email-value" id="emailOutput" aria-live="polite">yourname@gmail.com</div>
+                <div class="data-card-actions">
+                  <button class="btn btn-soft btn-copy" id="copyEmailBtn" type="button" disabled data-copy="email">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"/></svg>
+                    <span>Copy email</span>
+                  </button>
+                  <span class="format-note">Handle: letters only · no dots or symbols</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="profile-meta" aria-label="Generated profile details">
+              <div><span>Platform</span><strong id="metaPlatform">Windows NT 10.0</strong></div>
+              <div><span>Chrome</span><strong id="metaChrome">—</strong></div>
+              <div><span>Device</span><strong>Desktop</strong></div>
+              <div><span>Generated</span><strong id="metaTime">—</strong></div>
+            </div>
+
+            <div class="output-footer">
+              <button class="btn btn-outline btn-small" id="copyAllBtn" type="button" disabled>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+                Copy full profile
+              </button>
+              <p>
+                <span class="tiny-dot"></span>
+                All profiles use the same trusted Windows desktop UA structure.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <div class="micro-stats" aria-label="Session statistics">
+          <div>
+            <span class="stat-number" id="statProfiles">0</span>
+            <span class="stat-label">Profiles generated</span>
+          </div>
+          <div>
+            <span class="stat-number" id="statEmails">0</span>
+            <span class="stat-label">Unique emails</span>
+          </div>
+          <div>
+            <span class="stat-number">0</span>
+            <span class="stat-label">Duplicate emails</span>
+          </div>
+          <div class="micro-stat-note">
+            <span class="live-badge"><span class="status-dot"></span> GLOBAL</span>
+            <span>Emails are checked globally. History stays on this device.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recent-section" id="recent" aria-labelledby="recent-title">
+      <div class="container">
+        <div class="panel history-panel">
+          <div class="history-head">
+            <div>
+              <div class="panel-topline">
+                <span class="section-index">03</span>
+                <span class="mini-label">Saved on this device</span>
+              </div>
+              <h2 id="recent-title">Recent profiles</h2>
+              <p>Your latest 50 profiles appear here. Every new email is reserved in the global registry before it is shown, so other users cannot receive the same one.</p>
+            </div>
+            <div class="history-actions">
+              <button class="btn btn-outline btn-small" id="exportBtn" type="button">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+                Export CSV
+              </button>
+              <button class="btn btn-danger-ghost btn-small" id="clearBtn" type="button">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
+                Clear history
+              </button>
+            </div>
+          </div>
+
+          <div class="history-summary">
+            <span><strong id="historyCount">0</strong> saved profiles</span>
+            <span class="summary-dot" aria-hidden="true"></span>
+            <span><strong id="historyUnique">0</strong> unique emails</span>
+            <span class="summary-dot" aria-hidden="true"></span>
+            <span class="safe-label"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> No duplicates</span>
+          </div>
+
+          <div class="table-wrap">
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th scope="col">Email address</th>
+                  <th scope="col">Chrome</th>
+                  <th scope="col">Generated</th>
+                  <th scope="col"><span class="sr-only">Actions</span></th>
+                </tr>
+              </thead>
+              <tbody id="historyBody">
+                <tr class="empty-row">
+                  <td colspan="4">
+                    <div class="empty-state">
+                      <span class="empty-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 9h16M8 14h3"/></svg>
+                      </span>
+                      <span>
+                        <strong>No profiles yet</strong>
+                        <small>Your generated profiles will appear here.</small>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-heading-centered">
+          <span class="mini-label">Simple by design</span>
+          <h2 id="how-title">Three steps. One clean profile.</h2>
+          <p>No accounts, no waiting and no complicated setup.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 7h16M7 12h10M10 17h4"/><circle cx="8" cy="7" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="12" cy="17" r="2"/></svg>
+            </span>
+            <h3>Pick a version</h3>
+            <p>Keep the default Chrome 155 or turn on manual mode to choose any version from 150 to 160.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m13 2-2 7h6l-8 13 2-8H5l8-12Z"/></svg>
+            </span>
+            <h3>Generate instantly</h3>
+            <p>One click creates a standards-shaped Windows UA and reserves a fresh American-style Gmail handle globally.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"/></svg>
+            </span>
+            <h3>Copy and go</h3>
+            <p>Grab each value, copy the full profile or export your saved history as a CSV file.</p>
+          </article>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <h3>Format-perfect output</h3>
+              <p>Uses the expected Windows NT 10.0 / Win64 / Chrome / Safari token order with no extra noise.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/><path d="m15 16 2 2 3-4"/></svg>
+            </span>
+            <div>
+              <h3>No repeated emails</h3>
+              <p>A shared Netlify Blobs registry reserves every handle, so two users on different devices cannot receive the same address.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div>
+              <h3>Private by default</h3>
+              <p>No signup or personal data. Only the anonymous email handle and its reservation time are stored for global uniqueness.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <span class="mini-label">Good to know</span>
+          <h2 id="faq-title">Questions, answered.</h2>
+          <p>Everything you need to know before generating your first profile.</p>
+          <a class="text-link" href="https://cashzone.cc/" target="_blank" rel="noopener noreferrer">
+            Explore CashZone
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+          </a>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>Is the generated user agent realistic?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>The output follows the exact token order used by desktop Chrome on 64-bit Windows. It is suitable for QA, compatibility testing and interface demos. It is not a claim of your current browser identity.</p>
+          </details>
+          <details>
+            <summary>Can I keep the Chrome version selection off?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>Yes. Manual selection is optional. With the switch off, every profile uses the default Chrome 155.0.0.0. Turn it on only when you need a specific major version.</p>
+          </details>
+          <details>
+            <summary>Will the same email ever repeat?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>No. Before an address is shown, it is atomically reserved in a shared Netlify Blobs registry. The check covers every user of this deployed site, not just your browser. Clearing local history does not release or reuse an address.</p>
+          </details>
+          <details>
+            <summary>Are these email addresses real inboxes?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>No. They are realistic-looking, letters-only Gmail addresses created for testing and mock profiles. No inbox is created and no messages can be sent to them. Use generated identities responsibly and follow the rules of any platform you test with.</p>
+          </details>
+          <details>
+            <summary>Where is my generated history stored?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>Your profile history stays in this browser’s local storage. For global uniqueness, the server stores only the anonymous Gmail handle and its reservation timestamp in Netlify Blobs—never your clipboard contents or personal data. You can clear the local history at any time.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-art" aria-hidden="true">
+            <img src="./assets/icon.png" alt="" width="256" height="256" loading="lazy">
+          </div>
+          <div class="cta-copy">
+            <span class="mini-label">Ready when you are</span>
+            <h2>Create your next clean profile.</h2>
+            <p>Realistic on the outside. Simple on the inside. No signup required.</p>
+          </div>
+          <button class="btn btn-primary" id="ctaGenerateBtn" type="button">
+            Generate profile
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-2 7h6l-8 13 2-8H5l8-12Z"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="https://cashzone.cc/" target="_blank" rel="noopener noreferrer" aria-label="CashZone">
+          <img src="./assets/logo.png" alt="CashZone" width="480" height="192" loading="lazy">
+        </a>
+        <p>A free profile utility built for the CashZone community.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#generator">Generator</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQs</a>
+        <a href="https://cashzone.cc/" target="_blank" rel="noopener noreferrer">CashZone.cc ↗</a>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> CashZone. All rights reserved.</span>
+        <span class="footer-disclaimer">For testing and demonstration use only. Generated emails are not deliverable inboxes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+    <span class="toast-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+    </span>
+    <span id="toastText">Copied to clipboard</span>
+  </div>
+
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>

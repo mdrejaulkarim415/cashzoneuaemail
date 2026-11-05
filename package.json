@@ -1,0 +1,13 @@
+{
+  "name": "cashzone-profile-studio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "CashZone Windows Chrome user agent and globally unique US-style Gmail address generator.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@netlify/blobs": "11.1.7"
+  }
+}
